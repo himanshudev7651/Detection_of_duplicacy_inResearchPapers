@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>Research Plagiarism Detector</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- This script will transpile JSX on the fly -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "pdfjs-dist/": "https://aistudiocdn.com/pdfjs-dist@^4.5.136/",
+    "pdfjs-dist": "https://aistudiocdn.com/pdfjs-dist@^4.5.136/build/pdf.mjs"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- Changed type to "text/babel" so Babel can process it -->
+    <script type="text/babel" data-type="module" src="index.tsx"></script>
+  </body>
+</html>
